@@ -20,6 +20,9 @@ function CounterDemo(): JSX.Element {
       <button onClick={handleAddOne}>+1</button>
       <hr />
       <button onClick={handleReset}>Reset counter</button>
+      <button onClick={() => queueRerenderWithNewCounterValue(counterValueFromCurrentRender - 5)}>-5</button>
+      <button onClick={() => queueRerenderWithNewCounterValue(counterValueFromCurrentRender - 1)}>-1</button>
+      <button onClick={() => queueRerenderWithNewCounterValue(counterValueFromCurrentRender + 5)}>+5</button>
     </>
   );
 }
