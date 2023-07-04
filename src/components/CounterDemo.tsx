@@ -10,6 +10,7 @@ function CounterDemo(): JSX.Element {
 
   const handleReset = () => {
     // TODO reset counter to 0 here
+    queueRerenderWithNewCounterValue(0);
   }
 
   return (
